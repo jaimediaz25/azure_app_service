@@ -1,0 +1,20 @@
+# Copia este archivo como terraform.tfvars y ajusta los valores
+
+location            = "eastus"          # o "centralus", "westus2", etc.
+resource_group_name = "rg-utvt-integradora-dev-mxc-001-terraformjdg"
+
+# Contraseñas (cámbialas por seguridad)
+admin_password      = "TuPasswordSeguro123!"
+psql_admin_password = "TuPasswordSeguro123!"
+
+# Storage Account debe ser único globalmente (solo minúsculas y números, 3-24 caracteres)
+storage_account_name = "stutvtintdevmxc001jdg"
+
+# Tags personalizados
+tags = {
+  Environment = "dev"
+  Project     = "ProyectoIntegradora"
+  ManagedBy   = "Terraform"
+  Owner       = "Jaime"
+  Lab         = "Lab3-Terraform"
+}
